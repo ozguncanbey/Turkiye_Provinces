@@ -7,9 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Abstract\" />
-      <Folder Include="Concrete\" />
-      <Folder Include="DependencyResolvers\Ninject\" />
+      <ProjectReference Include="..\TurkiyeProvinces.DataAccess\TurkiyeProvinces.DataAccess.csproj" />
+      <ProjectReference Include="..\TurkiyeProvinces.Entities\TurkiyeProvinces.Entities.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Ninject" Version="3.3.6" />
     </ItemGroup>
 
 </Project>

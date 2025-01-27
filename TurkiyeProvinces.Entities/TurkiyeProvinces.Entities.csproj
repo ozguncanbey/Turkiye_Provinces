@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Concrete\" />
+      <ProjectReference Include="..\TurkiyeProvinces.Core\TurkiyeProvinces.Core.csproj" />
     </ItemGroup>
 
 </Project>
