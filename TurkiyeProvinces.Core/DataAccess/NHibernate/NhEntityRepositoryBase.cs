@@ -47,7 +47,11 @@ public class NhEntityRepositoryBase<TEntity> : IEntityRepository<TEntity> where 
     {
         using (var session = _nHibernateHelper.OpenSession())
         {
-            session.Delete(entity);
+            using (var transaction = session.BeginTransaction())
+            {
+                session.Delete(entity);
+                transaction.Commit();
+            }
         }
     }
 }

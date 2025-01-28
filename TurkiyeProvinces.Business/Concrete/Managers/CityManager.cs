@@ -18,9 +18,9 @@ public class CityManager : ICityService
         return _cityDal.GetAll();
     }
 
-    public void GetById(int id)
+    public City GetById(int id)
     {
-        _cityDal.GetById(id);
+        return _cityDal.GetById(id);
     }
 
     public void Add(City city)

@@ -1,3 +1,10 @@
+using TurkiyeProvinces.Business.Abstract;
+using TurkiyeProvinces.Business.Concrete.Managers;
+using TurkiyeProvinces.Core.DataAccess.NHibernate;
+using TurkiyeProvinces.DataAccess.Abstract;
+using TurkiyeProvinces.DataAccess.Concrete.NHibernate;
+using TurkiyeProvinces.DataAccess.Concrete.NHibernate.Helpers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +12,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<ICityService, CityManager>();
+builder.Services.AddScoped<ICityDal, NhCityDal>();
+builder.Services.AddSingleton<NHibernateHelper, SqlServerHelper>();
 
 var app = builder.Build();
 

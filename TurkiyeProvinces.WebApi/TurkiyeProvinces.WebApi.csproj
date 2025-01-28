@@ -11,4 +11,9 @@
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\TurkiyeProvinces.Business\TurkiyeProvinces.Business.csproj" />
+      <ProjectReference Include="..\TurkiyeProvinces.DataAccess\TurkiyeProvinces.DataAccess.csproj" />
+    </ItemGroup>
+
 </Project>
