@@ -85,39 +85,6 @@ Example Response:
 
 ---
 
-## Getting Started
-
-### Prerequisites
-
-1. .NET 6.0 SDK or higher
-2. SQL Server or a compatible database
-3. NHibernate configured for database access
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/cities-management-api.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd cities-management-api
-   ```
-3. Restore the dependencies:
-   ```bash
-   dotnet restore
-   ```
-
-### Running the Application
-
-1. Build and run the application:
-   ```bash
-   dotnet run
-   ```
-2. The API will be available at `http://localhost:{port}/cities` (default port is 5000).
-
----
-
 ## Error Handling
 
 - **404 Not Found**: Returned when a requested resource (city) is not found.
