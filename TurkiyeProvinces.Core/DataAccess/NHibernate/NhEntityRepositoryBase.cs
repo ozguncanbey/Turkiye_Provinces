@@ -39,7 +39,11 @@ public class NhEntityRepositoryBase<TEntity> : IEntityRepository<TEntity> where 
     {
         using (var session = _nHibernateHelper.OpenSession())
         {
-            session.Update(entity);
+            using (var transaction = session.BeginTransaction())
+            {
+                session.Update(entity);
+                transaction.Commit(); 
+            }
         }
     }
 

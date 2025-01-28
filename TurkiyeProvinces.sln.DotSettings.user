@@ -1,0 +1,7 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d286ef7c_002D69fa_002D4ec3_002Db17a_002D16cee96a77e5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="NHibernateTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::2F9624AC-88B1-4C9D-B9E8-5902BF656693::net8.0::TurkiyeProvinces.DataAccess.Tests.NHibernateTests.NHibernateTest&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::6780D0E1-4018-47F3-AB60-586CDDC5DBAF::net8.0::TurkiyeProvinces.Business.Tests.CityManagerTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
